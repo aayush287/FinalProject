@@ -4,4 +4,6 @@
     <string name="button_text">Tell Joke</string>
     <string name="action_settings">Settings</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="free_version_text">You are in Free version</string>
+    <string name="paid_version_text">Your are in Paid version.</string>
 </resources>

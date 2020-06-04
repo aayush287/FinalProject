@@ -1,8 +1,11 @@
 package com.udacity.gradle.builditbigger.backend;
 
+import com.codinguniverse.jokeslibrary.GetJokes;
+import com.codinguniverse.jokeslibrary.Joke;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
+
 
 import javax.inject.Named;
 
@@ -25,6 +28,15 @@ public class MyEndpoint {
         response.setData("Hi, " + name);
 
         return response;
+    }
+
+    /**
+     * A simple endpoint method that return a joke
+     */
+    @ApiMethod(name = "getJokes")
+    public Joke getJokes(){
+        GetJokes getJokes = new GetJokes();
+        return getJokes.getJokeRandomly();
     }
 
 }
